@@ -1,0 +1,3 @@
+################# DO NOT DELETE THIS #################
+
+#skip all the python scripts in DAG_FOLDER or sub-folders from parsing

@@ -1,0 +1,17 @@
+[2023-08-30T17:45:18.146+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example.t4 scheduled__2023-08-29T17:44:36.920926+00:00 [queued]>
+[2023-08-30T17:45:18.151+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example.t4 scheduled__2023-08-29T17:44:36.920926+00:00 [queued]>
+[2023-08-30T17:45:18.152+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-08-30T17:45:18.160+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): t4> on 2023-08-29 17:44:36.920926+00:00
+[2023-08-30T17:45:18.164+0000] {standard_task_runner.py:57} INFO - Started process 301 to run task
+[2023-08-30T17:45:18.165+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'example', 't4', 'scheduled__2023-08-29T17:44:36.920926+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/example.py', '--cfg-path', '/tmp/tmpcbu3nzhu']
+[2023-08-30T17:45:18.166+0000] {standard_task_runner.py:85} INFO - Job 8: Subtask t4
+[2023-08-30T17:45:18.194+0000] {task_command.py:415} INFO - Running <TaskInstance: example.t4 scheduled__2023-08-29T17:44:36.920926+00:00 [running]> on host d1c938981485
+[2023-08-30T17:45:18.238+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example' AIRFLOW_CTX_TASK_ID='t4' AIRFLOW_CTX_EXECUTION_DATE='2023-08-29T17:44:36.920926+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-29T17:44:36.920926+00:00'
+[2023-08-30T17:45:18.238+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-08-30T17:45:18.239+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo task 4']
+[2023-08-30T17:45:18.248+0000] {subprocess.py:86} INFO - Output:
+[2023-08-30T17:45:18.249+0000] {subprocess.py:93} INFO - task 4
+[2023-08-30T17:45:18.249+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-08-30T17:45:18.265+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example, task_id=t4, execution_date=20230829T174436, start_date=20230830T174518, end_date=20230830T174518
+[2023-08-30T17:45:18.297+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-30T17:45:18.308+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check
