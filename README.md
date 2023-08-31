@@ -14,4 +14,5 @@ __Note__:
 3. To run any custom bash command during the container setup, user can use 'entrypoint.sh' file.
 4. If user is intended to use docker based postgres database to store airflow metadata, then it is recommended to store postgres datafile locally (as /data/pg-sql here). Tweak in docker-compose file's volumes section of postgres service for the change.
 
-Please reach out to ashishsingh0794@gmail.com in case of any question or query. Would be happy to help!
+Please reach out to ashishsingh0794@gmail.com in case of any question or query. Would be happy to help! 
+Also, please give a star if this helps you!
