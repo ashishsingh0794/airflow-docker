@@ -4,7 +4,7 @@ This repository provides codes-set and helper guide for users who are looking to
 
 #### Steps of Setup
 1. To use your instance folder to host Dags, plugins, supported scripts and capture logs - create these folders locally (as in folder "airflow"), tweak docker-compose file in volumes section and run **sudo chown 50000:0 dags logs plugins scripts**. '50000' is set airflow user id and '0' is respective group id in docker environment.
-2. It is recommended to build your custom image first and then use that image to build airflow's core components container instances in Docker. This is to simply avoid the creation of separate docker images against each service of docker-compose file. You can simply use this Dockerfile build command as it is - **docker build . -t custom-verbose-airflow:1.0.0**.
+2. It is recommended to build your custom Airflow image first, based on your requirements and then use that image to build airflow's core components container instances in Docker. You can simply use this Dockerfile build command as it is - **docker build . -t custom-verbose-airflow:1.0.0**.
 3. Once the containers are up and running, you can access web server UI here - **http://localhost:8080/airflow** You can customize the URL by tweaking in '.env' file also.
 
 
